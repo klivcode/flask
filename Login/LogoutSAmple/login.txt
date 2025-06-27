@@ -1,4 +1,4 @@
-#Simple Login Page
+#Simple Login Page And Logout Page
 
 -LOGIN
 -ACCEPT THE USERNAME AND PASSWORD

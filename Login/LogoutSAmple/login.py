@@ -19,9 +19,9 @@ def login():
     return '''
         <h2>Login Page</h2>
             <form method ="POST">
-                Username:
+                <label for="username"></label>
                 <input type ="text" name="username"> <br>
-                Password:
+                <label for="Password"></label>
                 <input type ="text" name="password"> <br>
                 <input type ="submit" value="Login">
             </form>
