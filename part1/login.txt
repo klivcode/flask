@@ -1,0 +1,9 @@
+#Simple Login Page
+
+-LOGIN
+-ACCEPT THE USERNAME AND PASSWORD
+-SESSION STORE
+-REDIREDTED TO WELCOME PAGE
+-LOGOUT
+
+-- to start your name flask --app APP_NAME.py run

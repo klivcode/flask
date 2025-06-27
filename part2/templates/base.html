@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}
+        
+    {% endblock%}</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <style>
+    header{
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+    nav{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2rem;
+        
+    }
+
+    #sid, #fid{
+        padding-right: 2rem;
+
+
+    }
+    footer{
+        background-color: rgb(27, 27, 43);
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: capitalize;
+    }
+   </style>
+
+   
+</head>
+<body>
+    
+    <header> <h1>This is a Header with Nav Bar</h1>
+        <nav>
+           <a id="fid" href="/">Home</a>
+           <a id="sid" href="/about">About us</a>
+        </nav>    
+    </header>
+    {% block content %}
+
+        <!--- Section---->
+        
+    {% endblock %}
+    <footer> This is a Footer section</footer>
+</body>
+</html>
