@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        
+    {% endblock  %}</title>
+
+    <style>
+        header{
+            background-color: gray;
+        }
+
+        footer{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+        <a href="/feedback">Feedback</a>
+       </nav>
+    </header>
+
+        {% block content %}
+            
+        {% endblock  %}
+
+    <footer>
+        <h1>This is a footer section</h1>
+    </footer>
+</body>
+</html>
