@@ -1,3 +1,4 @@
 CSRF attack and protection
 WTF==WEB TEMPLATE FORM
 pip install flask-WTF
+pip install email_validator

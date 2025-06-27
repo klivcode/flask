@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        
+    {% endblock  %}</title>
+
+    <style>
+        header{
+            background-color: gray;
+        }
+
+        footer{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+        <a href="/">Home</a>
+       </nav>
+    </header>
+    
+    {% with messages= get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+        {% for category, msg in messages %}
+        <p style="color: green;">{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    {% block content %}
+            
+    {% endblock  %}
+
+    <footer>
+        <p>
+            &copy: 2025 Powered By KLIVCODE
+        </p>
+    </footer>
+</body>
+</html>
