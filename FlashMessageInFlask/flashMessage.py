@@ -11,7 +11,7 @@ def form():
             flash("Name cannot be empty")
             return redirect(url_for("form"))
         flash(f"Thanks {name}, your feedback is saved")
-        return render_template("thankyou.html", name=name)
+        return redirect(url_for("thankyou")) # route name
     return render_template("form.html")
 
 
