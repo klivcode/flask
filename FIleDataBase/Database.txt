@@ -1,0 +1,3 @@
+Introduction to Database-> SQLAlchemy Basics->Creating Models, Data Types and Relationships, Queries-> add() , commit() , filter(), all(), get()
+
+SQlite-> file based database engine=== Advanyages and Disadvantages

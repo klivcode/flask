@@ -3,3 +3,6 @@ WTF==WEB TEMPLATE FORM
 pip install flask-WTF
 pip install email_validator
 pip freeze > requirements.txt
+SQLAlchemy
+SQlite3
+pip install flask-sqlalchemy
